@@ -23,7 +23,7 @@ public class FirstController {
     }
 
     @FXML
-    public void handleOKButton(ActionEvent event) throws IOException {
+    private void handleOKButton(ActionEvent event) throws IOException {
         Logger.info("Name entered: {}", nameField.getText());
         FXMLLoader fxmlLoader = new FXMLLoader(FirstController.class.getResource("/fxml/second.fxml"));
         Parent root = fxmlLoader.load();

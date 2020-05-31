@@ -23,8 +23,8 @@ public class SecondController {
     }
 
     public void setName(String name) {
+        Logger.info("Setting name to {}", name);
         this.name = name;
-        Logger.info("name = {}", this.name);
     }
 
     @FXML

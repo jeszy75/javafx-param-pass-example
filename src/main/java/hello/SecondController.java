@@ -27,7 +27,8 @@ public class SecondController {
         Logger.info("name = {}", this.name);
     }
 
-    public void handleExitButton(ActionEvent event) {
+    @FXML
+    private void handleExitButton(ActionEvent event) {
         Platform.exit();
     }
 
